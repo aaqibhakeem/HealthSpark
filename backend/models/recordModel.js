@@ -3,15 +3,15 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 const recordSchema = new Schema({
     age: {
-        type: Number,
+        type: String,
         required: true
     },
     height: {
-        type: Number,
+        type: String,
         required: true
     },
     weight: {
-        type: Number,
+        type: String,
         required: true
     },
     symptoms: {

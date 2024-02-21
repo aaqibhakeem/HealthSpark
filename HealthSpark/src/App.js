@@ -7,13 +7,16 @@ import Nomatch from './components/nomatch.js';
 import AudioPage from './components/audio.js';
 import VideoPage from './components/video.js';
 import ChatPage from './components/chat.js';
-// import Chat
+import Home from './components/home.js';
+import AddRecord from './components/addrecord.js';
 
 function App() {
   return (
     <div>
       <BrowserRouter>
         <Routes>
+          <Route path='/' element={<Home/>}/>
+
           <Route path='/signup' element={<Signup/>} />
 
           <Route path='/login' element={<Login/>} />
@@ -27,6 +30,8 @@ function App() {
           <Route path='/video' element={<VideoPage/>} />
 
           <Route path='/chat' element={<ChatPage/>} />
+
+          <Route path='/add' element={<AddRecord />} />
 
         </Routes>
       </BrowserRouter>
